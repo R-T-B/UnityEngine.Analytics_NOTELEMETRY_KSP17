@@ -6,7 +6,7 @@ namespace UnityEngine.Analytics
     [Serializable]
     internal class TrackableProperty
     {
-        public const int kMaxParams = 10;
+        public const int kMaxParams = 0;
         [SerializeField]
         private List<TrackableProperty.FieldWithTarget> m_Fields;
 
@@ -14,7 +14,7 @@ namespace UnityEngine.Analytics
         {
             get
             {
-                return this.m_Fields;
+                return new List<FieldWithTarget>();
             }
             set
             {
@@ -46,7 +46,7 @@ namespace UnityEngine.Analytics
             {
                 get
                 {
-                    return this.m_ParamName;
+                    return "";
                 }
                 set
                 {
@@ -57,7 +57,7 @@ namespace UnityEngine.Analytics
             {
                 get
                 {
-                    return this.m_Target;
+                    return null;
                 }
                 set
                 {
