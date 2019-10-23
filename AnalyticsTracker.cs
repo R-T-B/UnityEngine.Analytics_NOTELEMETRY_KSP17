@@ -30,7 +30,7 @@ namespace UnityEngine.Analytics
         {
             get
             {
-                return this.m_TrackableProperty;
+                return null;
             }
             set
             {
