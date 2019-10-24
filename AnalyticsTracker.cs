@@ -11,7 +11,7 @@ namespace UnityEngine.Analytics
         [SerializeField]
         private TrackableProperty m_TrackableProperty = new TrackableProperty();
         [SerializeField]
-        internal AnalyticsTracker.Trigger m_Trigger = AnalyticsTracker.Trigger.External;
+        internal AnalyticsTracker.Trigger m_Trigger = AnalyticsTracker.Trigger.OnDisable;
         [SerializeField]
         private string m_EventName;
 
